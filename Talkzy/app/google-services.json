@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "440406508048",
+    "project_id": "talkzy-bcf21",
+    "storage_bucket": "talkzy-bcf21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440406508048:android:ba4693e4b80707241e0095",
+        "android_client_info": {
+          "package_name": "com.app.talkzy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440406508048-vm8fa12cqrgi848e3ou0qmlqd4i9n8bt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.talkzy",
+            "certificate_hash": "6d88dd3973acb38b079784d46fcf522945e033ff"
+          }
+        },
+        {
+          "client_id": "440406508048-go403nlo8k5hmdutk84cgfecamko9isj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS6WvmvZBLyUuOJOdN0ZwaGDEau9U6Jyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440406508048-go403nlo8k5hmdutk84cgfecamko9isj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

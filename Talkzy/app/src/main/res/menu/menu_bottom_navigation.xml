@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_map"
+        android:checked="false"
+        android:title="Map"
+        android:icon="@drawable/ic_map"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_stories_chats"
+        android:checked="false"
+        android:icon="@drawable/ic_chat"
+        android:title=" Chats &amp; Stories"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_meet"
+        android:checked="false"
+        android:icon="@drawable/ic_peoples"
+        android:title="Meet"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_notifications"
+        android:checked="false"
+        android:icon="@drawable/ic_notifications"
+        android:title="Notifications"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_profile"
+        android:checked="true"
+        android:title="Profile"
+        android:icon="@drawable/ic_person"
+        app:showAsAction="always" />
+</menu>

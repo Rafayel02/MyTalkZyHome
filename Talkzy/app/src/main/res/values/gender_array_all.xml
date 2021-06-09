@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender_array_all">
+        <item>HIDDEN</item>
+        <item>MALE</item>
+        <item>FEMALE</item>
+        <item>ALL</item>
+    </string-array>
+</resources>

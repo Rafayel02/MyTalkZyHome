@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:background="@color/ourDarkColor"
+    android:padding="0dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/ic_person">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+    <TextView
+        android:id="@+id/notificationBody"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/profile_image"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/profile_image"
+        android:paddingTop="5dp"
+        android:textColor="#DAD7D7"></TextView>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="52dp"
+        android:layout_height="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rounded_corner_button_white"
+        android:padding="1dp"
+        android:text="Delete"
+        android:textColor="@color/black"
+        android:textSize="6sp" />
+
+    <Button
+        android:id="@+id/acceptButton"
+        android:layout_width="52dp"
+        android:layout_height="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@+id/deleteButton"
+        android:layout_toLeftOf="@+id/deleteButton"
+        android:background="@drawable/rounded_corner_button_our_color"
+        android:padding="1dp"
+        android:text="Accept"
+        android:textSize="6sp" />
+
+    <TextView
+        android:id="@+id/notificationTime"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/notificationBody"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="107dp"
+        android:layout_toStartOf="@+id/actionButton"
+        android:layout_toLeftOf="@+id/actionButton"
+        android:layout_toEndOf="@+id/profile_image"
+        android:layout_toRightOf="@+id/profile_image"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="#DAD7D7"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/actionButton"
+        android:layout_width="70dp"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/rounded_corner_button_our_color"
+        android:text="View"
+        android:textSize="8sp"
+        tools:visibility="gone" />
+
+
+</RelativeLayout>

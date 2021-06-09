@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginRegistrationClasses.Registration"
+    android:visibility="visible"
+    android:background="@drawable/login_background">
+
+    <!--Confirm layout-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/registrationActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:context=".loginRegistrationClasses.Registration"
+        tools:visibility="visible">
+
+        <!--Confirm layout-->
+
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="25dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_icon"
+            tools:srcCompat="@drawable/logo_icon" />
+
+        <TextView
+            android:id="@+id/logoName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/logo_font"
+            android:fontFeatureSettings="@string/title_map"
+            android:text="Talkzy"
+            android:textColor="@color/ourColor"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="@+id/icon3"
+            app:layout_constraintStart_toStartOf="@+id/icon3"
+            app:layout_constraintTop_toBottomOf="@+id/icon3" />
+
+        <TextView
+            android:id="@+id/fullNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Full Name"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/regFullNameInputText"
+            app:layout_constraintTop_toBottomOf="@+id/logoName3" />
+
+        <TextView
+            android:id="@+id/fullNameText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Email"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/regUserNameInputText"
+            app:layout_constraintTop_toBottomOf="@+id/regUserNameInputText" />
+
+        <TextView
+            android:id="@+id/passwordText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Password"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/regPasswordInputText"
+            app:layout_constraintTop_toBottomOf="@+id/regEmailInputText" />
+
+        <TextView
+            android:id="@+id/confirmPasswordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Confirm Your Password"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/regPasswordConfirmInputText"
+            app:layout_constraintTop_toBottomOf="@+id/regPasswordInputText" />
+
+        <EditText
+            android:id="@+id/regFullNameInputText"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_background"
+            android:ems="10"
+            android:hint="Enter your full name"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullNameText" />
+
+        <EditText
+            android:id="@+id/regEmailInputText"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableLeft="@drawable/ic_baseline_mail_outline_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullNameText2" />
+
+        <EditText
+            android:id="@+id/regPasswordInputText"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordText2" />
+
+        <Button
+            android:id="@+id/visUnVisOfPasswordButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_baseline_visibility_off_24"
+            app:layout_constraintBottom_toBottomOf="@+id/regPasswordInputText"
+            app:layout_constraintEnd_toEndOf="@+id/regPasswordInputText"
+            app:layout_constraintTop_toTopOf="@+id/regPasswordInputText" />
+
+        <EditText
+            android:id="@+id/regPasswordConfirmInputText"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmPasswordText" />
+
+        <Button
+            android:id="@+id/visUnVisOfPasswordConfirmButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_baseline_visibility_off_24"
+            app:layout_constraintBottom_toBottomOf="@+id/regPasswordConfirmInputText"
+            app:layout_constraintEnd_toEndOf="@+id/regPasswordConfirmInputText"
+            app:layout_constraintTop_toTopOf="@+id/regPasswordConfirmInputText" />
+
+        <TextView
+            android:id="@+id/usernameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Choose Your Username"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/regUserNameInputText"
+            app:layout_constraintTop_toBottomOf="@+id/regFullNameInputText" />
+
+        <EditText
+            android:id="@+id/regUserNameInputText"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_background"
+            android:ems="10"
+            android:hint="Enter username"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usernameText" />
+
+        <Button
+            android:id="@+id/registrationButton"
+            android:layout_width="246dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corner_button"
+            android:text="Sign up"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regPasswordConfirmInputText"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!--After mail layout-->
+
+        <!--Confirm layout-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/verifyActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-275dp"
+        tools:visibility="gone">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Code"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.44" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Verification code from your email"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName" />
+
+        <Button
+            android:id="@+id/verifyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Verify"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+        <Button
+            android:id="@+id/sendAgainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Send again"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#00FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/verifyButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--After mail layout-->
+
+    <!--Confirm layout-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
